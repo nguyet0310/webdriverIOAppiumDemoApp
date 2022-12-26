@@ -1,0 +1,35 @@
+{
+  "name": "webdriverioappiumdemoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyet0310/webdriverIOAppiumDemoApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyet0310/webdriverIOAppiumDemoApp/issues"
+  },
+  "homepage": "https://github.com/nguyet0310/webdriverIOAppiumDemoApp#readme",
+  "dependencies": {
+    "@wdio/cli": "^8.0.13",
+    "@wdio/local-runner": "^8.0.13",
+    "@wdio/mocha-framework": "^8.0.13",
+    "@wdio/spec-reporter": "^8.0.13"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "@wdio/appium-service": "^8.0.13",
+    "appium": "^1.22.3"
+  }
+}

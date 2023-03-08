@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio",
-    "wdio": "wdio run ./wdio.conf.js"
+    "android.local.test": "wdio run ./configs/android.local.conf.js",
+    "ios.local.test": "wdio run ./configs/ios.local.conf.js"
   },
   "repository": {
     "type": "git",

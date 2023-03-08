@@ -1,5 +1,3 @@
-
-
 import Page from './page.js';
 
 /**
@@ -10,15 +8,15 @@ class LoginPage extends Page {
      * define selectors using getter methods
      */
     get inputUsername () {
-        return $('#username');
+        return $('~test-Username');
     }
 
     get inputPassword () {
-        return $('#password');
+        return $('~test-Password');
     }
 
     get btnSubmit () {
-        return $('button[type="submit"]');
+        return $('~test-LOGIN');
     }
 
     /**
@@ -31,12 +29,6 @@ class LoginPage extends Page {
         await this.btnSubmit.click();
     }
 
-    /**
-     * overwrite specific options to adapt it to page object
-     */
-    open () {
-        return super.open('login');
-    }
 }
 
 export default new LoginPage();

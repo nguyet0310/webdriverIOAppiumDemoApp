@@ -44,3 +44,9 @@
 - How to run test on android simulator: `npm run android.local.test`
 - How to run test on ios simulator: `npm run ios.local.test`
 - How to run test with report: `npm run android.local.test --reporter mochawesome`
+
+- How to run test on iOS real device:
+    - Get testing app bundle id and you have account to test it with testflight
+    - Sign Appium webdriver runner following this guide: `https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md`
+    - Set access right for developer in your device using this guide: `https://developer.apple.com/forums/thread/660288`
+    - Run test with iOs read device with cmd: `npx wdio run config/wdio.ios.conf.js --spec config/wdio.ios.real.conf.js`

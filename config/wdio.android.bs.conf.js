@@ -12,9 +12,9 @@ config.key = process.env.BROWSERSTACK_KEY;
 // ============
 // Specs
 // ============
-config.specs = [
-  path.join(process.cwd(), './test/specs/android/add-note-screen*.js')
-];
+// config.specs = [
+//   path.join(process.cwd(), './test/specs/android/add-note-screen*.js')
+// ];
 
 //
 // ============

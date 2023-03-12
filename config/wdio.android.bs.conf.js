@@ -23,11 +23,12 @@ config.specs = [
 config.capabilities = [
   {
     platformName: "Android",
-    "appium:platformVersion": "10.0",
+    "appium:platformVersion": "11.0",
     "appium:deviceName": "Google Pixel 3",
     "appium:automationName": "UIAutomator2",
-    "appium:app": "bs://cd209a98beb9c4bb48cfadf74d84c99092ec639c",
-    "appium:autoGrantPermissions": true
+    "appium:app": "bs://dd2659d47e9c9c118727640af199279ac84e5668",
+    "appium:appWaitActivity": 'com.swaglabsmobileapp.MainActivity'
+    // "appium:autoGrantPermissions": true
   }
 ]
 

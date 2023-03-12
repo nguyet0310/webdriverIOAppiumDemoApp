@@ -50,3 +50,8 @@
     - Sign Appium webdriver runner following this guide: `https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md`
     - Set access right for developer in your device using this guide: `https://developer.apple.com/forums/thread/660288`
     - Run test with iOs read device with cmd: `npx wdio run config/wdio.ios.conf.js --spec config/wdio.ios.real.conf.js`
+- Configure to run tests on BS:
+     - Login to BS and navigate to `App automate` part and do following things:
+     - Get the BS access user and key: expand option `Access key` in the header you will see it. There is example I already configured in Github -> Settings -> Secrets And Variables 
+     - In the GH action file: `.github/workflows/ci.yaml` -> it will define the app and BS acccess user and key to run
+     - The GH action, will run with config file `wdio.android.bs.conf.js`. This file also point that if there is a push or pull to the branch, it will trigger the test

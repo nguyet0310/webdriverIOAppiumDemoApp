@@ -11,9 +11,7 @@ config.port = 4723;
 // ============
 // Specs
 // ============
-config.specs = [
-  path.join(process.cwd(), './test/specs/ios/webview*.js')
-];
+config.specs = [];
 
 //
 // ============
@@ -25,7 +23,7 @@ config.capabilities = [
     "appium:deviceName": "iPhone 13 mini",
     "appium:platformVersion": "15.0",
     "appium:automationName": "XCUITest",
-    "appium:app": path.join(process.cwd(), "app/iOS.Simulator.SauceLabs.Mobile.Sample.app"),
+    "appium:app": path.join(process.cwd(), "apps/iOS.Simulator.SauceLabs.Mobile.Sample.app"),
     "appium:appWaitActivity": 'com.swaglabsmobileapp.MainActivity'
   }
 ]
